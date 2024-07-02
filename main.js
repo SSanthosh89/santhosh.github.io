@@ -7,15 +7,17 @@ english1 = document.getElementById('english1')
 option1 = document.getElementById('option1')
 tamilaud = document.getElementById('tamilaud')
 tamil1 = document.getElementById('tamil1')
-
+one=document.getElementById('one')
 
 function open1(event) {
     event.target.remove()
+    one.style.display = 'block'
 }
 
 function open2() {
     option.style.display = 'block'
     option1.play()
+    one.style.display = 'none'
 }
 
 function close2(event) {
@@ -23,6 +25,7 @@ function close2(event) {
 }
 
 function open3() {
+    option.style.display = 'none'
     english.style.display = 'block'
     english1.play()
     englishaud.play()
@@ -33,6 +36,7 @@ function open3() {
 }
 
 function open4() {
+    option.style.display = 'none'
     tamil.style.display = 'block'
     tamil1.play()
     tamil1.addEventListener('ended', function () {
